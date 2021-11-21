@@ -1,0 +1,346 @@
+@font-face {
+    font-family: mateona;
+    src: url(fuente/Third\ Rail\ -\ Demo.ttf);
+}
+
+@font-face {
+    font-family: caviar;
+    src: url(fuente/Louis\ George\ Cafe.ttf);
+    src: url(fuente/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family:    caviar, 'Lucida Sans', 'Lucida Sans Regular', 
+                    'Lucida Grande', 'Lucida Sans Unicode', 
+                    Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(131, 131, 131, 0.459);
+}
+
+.menu {
+    display: none;
+}
+
+.nav-bar .lista {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.lista li,
+.contacto ul li{
+    list-style: none;
+}
+
+.lista li a {
+    margin: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: rgba(119, 118, 119, 0.692);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.logo_img img,
+.contacto img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo_img {
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.contacto ul {
+    display: flex;
+}
+
+.contacto ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+    font-family: caviar;
+    margin: 0px 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: rgb(27, 27, 27);
+    border-radius: 30px;
+}
+
+.banner {
+    position: relative;
+    background-image: url(imagenes/fondo2.jpg);
+    text-align: center;
+    width:100%;
+    height:600px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(imagenes/fondo2.jpg);
+    background-size: cover;
+    text-align: right;
+}
+
+.texto_banner {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    width: 500px;
+    margin: 20px;
+}
+
+.texto_banner h1{
+    color: white;
+    font-size: 50px;
+    font-family: mateona;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.texto_banner p {
+    color: #ebebeb;
+    font-size: 1rem;
+    margin: 20px;
+    font-family: caviar;
+}
+
+.section-categoria { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(134, 37, 37);
+    height: auto;
+}
+
+.section-categoria .categoria-item h3 a{
+    margin: 20px 0px;
+    color: white;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: mateona;
+    text-decoration: underline;
+}
+
+.categoria-item {
+    text-align: center;
+    padding: 0px;
+    width: auto;
+}
+
+.main {
+    background-color: #5a4b35;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 20px;
+}
+
+.main h2 {
+    margin: 20px 30px;
+    font-size: 25px;
+    flex: 1 1 100%;
+    color: white;
+    text-transform: uppercase;
+    font-family: caviar;
+}
+
+.menu_item {
+    flex: 1 1 30%;
+    padding: 30px;
+}
+
+.item {     
+    padding: 20px;
+    background-color: #eceef0;
+}
+
+.item_blanco {
+    background-color: #ffffff;
+}
+
+
+.item div {
+    padding: 20px;
+    height: 200px;
+    text-align: justify;
+}
+
+.item img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.item div span {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(134, 37, 37);
+    font-weight: bolder;
+}
+
+.item div h3 {
+    margin: 0;
+}
+
+.item div h3 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+}
+
+.item div p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-redes ul,
+.footer-paginas ul {
+    padding: 0;
+}
+
+.footer-redes ul li a,
+.footer-paginas ul li a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-redes ul {
+    display: flex;
+    margin-right: 20px;
+}
+.footer-paginas ul li,
+.footer-redes ul li {
+    list-style: none;
+}
+
+.footer-redes ul li a img {
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px white solid;
+} 
+
+.footer-redes ul li a {
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*--hovers --*/
+.item div h3 a:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    color: red;
+}
+
+.section-categoria h3 a:hover {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.lista li a:hover {
+    background-color: rgba(248, 248, 248, 0.883);
+    color: black;
+    transition: 0.3s;
+}
+
+.contacto ul li a:hover {
+    background-color: rgba(245, 164, 58, 0.932);
+    color: black;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 580px) {  
+    .categoria-item {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .texto_banner {
+        position: absolute;
+        top: 250px;
+        right: 0px;
+        width: 400px;
+        padding: 20px;
+    }
+
+    .nav-bar .lista li a,
+    .contacto ul li a {
+        background-color: transparent;
+    }
+
+    .nav-bar .lista{
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        position: relative;
+        top: 80px;
+        left: 200px;
+        padding: 0px 10px;
+        width: 100%;
+        background-color: rgb(80, 8, 8);
+        display: none;
+    }
+
+    .visible {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0px 10px;
+        padding: 10px 0px;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    .menu img {
+        cursor: pointer;
+    }
+
+    .menu img:hover {
+        opacity: 0.8;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .contacto ul {
+        display: none;
+        flex-wrap: wrap;
+    }
+}
